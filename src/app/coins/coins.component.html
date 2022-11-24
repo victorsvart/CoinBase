@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav>
+    <div id="navbar">
+
+    </div>
+  </nav>
+
+
+  <main>
+  <div id="titlemore">
+    <h1><b>CoinBase</b></h1>
+    <h2>Seu serviço de cotação de moedas.</h2>
+  </div>
+
+    <mat-tab-group id ="mat-tab">
+      <mat-tab class= "Cotação" label="Cotação">
+        <h2>Ultima atualização: ##/##/#### às 00:00h</h2>
+        <div class="coinInfo" *ngFor="let coin of Coin">
+          <p><b>{{coin.code}}</b> - {{coin.symbol}} - {{coin.name}}</p>
+          <h4>Conversores:</h4>
+          <p  *ngFor="let converter of coin.converters">
+          {{converter.converterName}}, <b>Current Value:</b> {{converter.value}}</p>
+          <hr>
+        </div>
+      </mat-tab>
+
+      <mat-tab label="Converção"> Content 2
+      </mat-tab>
+    </mat-tab-group>
+  </main>
+
+  <footer></footer>
+</body>
+</html>

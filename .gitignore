@@ -40,3 +40,9 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+#Back End Files
+/CoinBaseAPI/CoinBase/appsettings.json
+/CoinBaseAPI/EntityFramework/Migrations/20221122195704_InitialCreate.cs
+/CoinBaseAPI/EntityFramework/Migrations/20221122195704_InitialCreate.Designer.cs
+/CoinBaseAPI/EntityFramework/Migrations/CoinContextModelSnapshot.cs
